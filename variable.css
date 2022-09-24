@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'robotoFlex';
+    src: url(./assets/RobotoFlex.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: aquamarine;
+    transition: background-color 300ms ease-in;
+}
+
+.hold{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+
+}
+.type{
+    font-family:'robotoFlex';
+    font-size: 10vw;
+    text-align: center;
+   padding: 0.5em;
+    font-variation-settings: 'wght' 100, 'wdth' 200;
+    transition: font-variation-settings 300ms;
+
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fold{
+    display: inline-block;
+    border-width: 2px 2px 2px 0px;
+    border-color: black;
+    border-style:solid;
+    width: 8vw;
+    height: 100vh;
+    transition: width 200ms;
+}
+@media screen and (max-width: 1700px)  {
+    body{
+        background: rgb(35, 148, 30)
+    }
+
+    .type{
+        font-variation-settings: 'wght' 200, 'wdth' 100; 
+    }
+}
+@media screen and (max-width: 1600px)  {
+    body{
+        background: rgb(55, 0, 255)
+        
+    }
+    .type{
+        font-variation-settings: 
+        'wght' 300, 
+        'wdth' 100; 
+    }
+}
+@media screen and (max-width: 1000px)  {
+    body{
+        background: rgb(157, 0, 255)
+    }
+    .type{
+        font-variation-settings: 'wght' 400, 'wdth' 60; 
+    }
+}
+
+@media screen and (max-width: 900px)  {
+    body{
+        background: rgb(0, 247, 255)
+    }
+    .type{
+        font-variation-settings: 'wght' 500, 'wdth' 50; 
+    }
+}
+
+@media screen and (max-width: 800px)  {
+    body{
+        background: greenyellow;
+    }
+    .type{
+        font-variation-settings: 'wght' 600, 'wdth' 40; 
+    }
+}
+@media screen and (max-width: 700px)  {
+    body{
+        background: yellow;
+    }
+    .type{
+        font-variation-settings: 'wght' 700, 'wdth' 30; 
+    }
+}
+@media screen and (max-width: 600px)  {
+    body{
+        background: orange;
+    }
+    .type{
+        font-variation-settings: 'wght' 800, 'wdth' 20; 
+    }
+    .hold{
+    margin-top: 35vh;
+    }
+}
+@media screen and (max-width: 500px)  {
+    body{
+        background: red;
+    }
+    .type{
+        font-variation-settings: 'wght' 900, 'wdth' 10; 
+    }
+
+}
+@media screen and (max-width: 400px)  {
+    body{
+        background: pink;
+    }
+}
+@media screen and (max-width: 300px)  {
+    body{
+        background: rgb(239, 7, 127);
+    }
+
+}
